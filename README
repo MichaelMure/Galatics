@@ -1,0 +1,12 @@
+-- Galatics --
+
+This software is a web application to compute the best solution to place
+people on fixed-size group. This software has been developped to
+maximize the social pleasure during a big school event. The goal is to
+place people in different table and compute the best configuration,
+based on the wish told by guest.
+
+This software compute the best solution by using an genetic algorithm.
+
+This software has been developped in PHP to be easily included in a
+purchase website.
