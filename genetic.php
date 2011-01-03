@@ -132,8 +132,8 @@ class Genetic {
 			$this->displatScale *= 2;
 		}
 		
-		include("../pChart/pData.class");  
-		include("../pChart/pChart.class");  
+		include("pChart/pData.class");  
+		include("pChart/pChart.class");  
 		  
 		// Dataset definition
 		$DataSet = new pData;
@@ -145,7 +145,7 @@ class Genetic {
 		
 		// Initialise the graph
 		$graph = new pChart(700,260);  
-		$graph->setFontProperties("../pChart/Fonts/tahoma.ttf",10);  
+		$graph->setFontProperties("pChart/Fonts/tahoma.ttf",10);  
 		$graph->setGraphArea(40,30,680,200);  
 		$graph->drawGraphAreaGradient(0,0,0,-100,TARGET_BACKGROUND);
 		$graph->drawXYScale($DataSet->GetData(),$DataSet->GetDataDescription(),"max","iterations",213,217,221,TRUE,45);
@@ -156,7 +156,7 @@ class Genetic {
 		$graph->drawXYGraph($DataSet->GetData(),$DataSet->GetDataDescription(),"max","iterations",3);
 		  
 		// Finish the graph
-		$graph->setFontProperties("../pChart/Fonts/tahoma.ttf",10);  
+		$graph->setFontProperties("pChart/Fonts/tahoma.ttf",10);  
 		$graph->drawTitle(60,22,"Evolution de la note moyenne",250,250,250,585);  
 		$graph->Render("graph.png");
 		
